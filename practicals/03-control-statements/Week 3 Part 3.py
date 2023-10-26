@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+if __name__ == '__main__':
+
 #A times table program focusing on the 7 times table
 
 #The program is asking the user to imput a number

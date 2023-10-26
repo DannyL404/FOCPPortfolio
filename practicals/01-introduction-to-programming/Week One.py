@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+if __name__ == '__main__':
 #Week One of my Python Portfolio
 
 print("Hello World!")

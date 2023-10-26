@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+if __name__ == '__main__':
+
 from math import log2
 result = log2(1024)
 print(result)

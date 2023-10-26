@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+if __name__ == '__main__':
 age = 19
 
 print(18 < age)

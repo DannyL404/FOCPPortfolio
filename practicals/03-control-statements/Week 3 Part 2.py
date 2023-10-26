@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+if __name__ == '__main__':
+
 #Password Program v2 - this is designed to keep running until a valid password is selected
 #Begins by setting every password as false and specifying the bad passwords the program can recognise.
 passwordvalid = False
