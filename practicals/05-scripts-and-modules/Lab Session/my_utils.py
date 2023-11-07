@@ -1,3 +1,5 @@
+if __name__ == '__main__':
+
 def average(values):
     """ Calculates the average of the given list. """
     total = 0;

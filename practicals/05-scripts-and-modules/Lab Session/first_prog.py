@@ -1,3 +1,4 @@
+if __name__ == '__main__':
 #This is a file that Asks a user for a number, it will then return it and if it is an odd or an event number.
 
 #This is taking a number input for the user
