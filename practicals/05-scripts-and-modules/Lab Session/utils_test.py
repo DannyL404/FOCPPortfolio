@@ -1,5 +1,4 @@
-if __name__ == '__main__':
+from my_utils import average
 
-import my_utils
-
-print(values(76 84 6666))
+print("Average is", average([10, 23, 30]))
+print("Another average is", average([10.2, 8.8, 2.6]))
