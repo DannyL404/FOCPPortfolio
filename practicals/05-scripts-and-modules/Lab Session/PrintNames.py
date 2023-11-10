@@ -1,3 +1,4 @@
+if __name__ == '__main__':
 import sys
 
 names = sys.argv[1 : ]

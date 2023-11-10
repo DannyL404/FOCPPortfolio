@@ -3,11 +3,11 @@
 if __name__ == '__main__':
 #Week three of my Python Portfolio
 #This program asks the user their name and then displays it back to them with a nice greeting. If they do not put a name it will print hello stranger
-name = input("What is your name?")
-if name == '':
-    print("Hello Stranger!")
-else:
-    print("Hello" , name , "nice to meet you!")
+    name = input("What is your name?")
+    if name == '':
+        print("Hello Stranger!")
+    else:
+        print("Hello" , name , "nice to meet you!")
 
 
 #Password program

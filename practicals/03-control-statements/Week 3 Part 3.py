@@ -5,7 +5,7 @@ if __name__ == '__main__':
 #A times table program focusing on the 7 times table
 
 #The program is asking the user to imput a number
-startnumber = input("Please enter a number between 0 and 12")
+    startnumber = input("Please enter a number between 0 and 12")
 startnumber = int(startnumber)
 
 #The program is calculating that number up to 12 x 7

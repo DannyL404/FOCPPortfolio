@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+if __name__ == '__main__':
 import total
 
-if __name__ == '__main__':
+
 
     def multiplicationtool(num1, num2):
      """Multiples two numbers together."""
