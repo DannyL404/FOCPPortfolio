@@ -39,7 +39,7 @@ print(stock)
 
 roots = {n : math.sqrt(n) for n in range(1,26)}
 
-for n in range roots.dict:
+for n in roots.dict:
     print("The square root of", roots.keys(n), "is", roots.values(n))
 
 print(roots)
