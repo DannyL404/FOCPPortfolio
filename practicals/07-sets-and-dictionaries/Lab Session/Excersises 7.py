@@ -1,4 +1,5 @@
-languages = set(["C++", "Java", "C#", "PHP", "JavaScript"])
+if __name__ == '__main__':
+    languages = set(["C++", "Java", "C#", "PHP", "JavaScript"])
 
 print(languages)
 

@@ -1,4 +1,5 @@
-file = open("info.txt")
+if __name__ == '__main__':
+    file = open("info.txt")
 for line in file:
     print(line)
 file.close()

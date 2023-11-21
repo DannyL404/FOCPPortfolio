@@ -1,4 +1,5 @@
-import math
+if __name__ == '__main__':
+    import math
 
 w = 104.32
 h = 15.654
