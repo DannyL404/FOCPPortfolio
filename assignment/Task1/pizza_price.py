@@ -11,13 +11,13 @@ Pizza_number = 0
 Tuesday = False
 App_Used = False
 Delivery_Required = False
-Data_Valid = 0
+Total_Cost = float(0)
 
 #This is the information that is needed to be gathered from the user
 
 #Checks the number of Pizzas Ordered
 Pizza_number = input("Please enter the number of Pizzas ordered")
-
+Pizza_number = int(Pizza_number)
 #Checking if the day is Tuesday
 day = input("Enter the day of the week")
 day = day.lower()
@@ -42,7 +42,15 @@ if App_Check == "yes":
 else:
     App_Used = False
 
+#This part of the program will calculate the output
+Total_Cost = Pizza_cost * Pizza_number
+if Delivery_Required == True:
+    Total_Cost += 2.5
 
+if Tuesday == True:
+    Total_Cost *= 0.5
 
+if App_Used == True:
+    Total_Cost *= 0.75
 
-
+print(Total_Cost)
