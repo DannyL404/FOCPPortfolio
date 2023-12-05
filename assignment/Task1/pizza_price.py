@@ -13,6 +13,10 @@ App_Used = False
 Delivery_Required = False
 Total_Cost = float(0)
 
+#Creating a nicely formatted header for the program to be displayed to the user
+print("BPP Pizza Price Calculator")
+print("==========================")
+
 #This is the information that is needed to be gathered from the user
 
 #Checks the number of Pizzas Ordered
@@ -53,4 +57,5 @@ if Tuesday == True:
 if App_Used == True:
     Total_Cost *= 0.75
 
-print(Total_Cost)
+#Displays the total cost to the user
+print(f"Total Price: £{Total_Cost:.2f}")
