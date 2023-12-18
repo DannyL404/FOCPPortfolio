@@ -1,5 +1,4 @@
-if __name__ == '__main__':
-    import sys
+import sys
 
 def shelter_analysis(log_file_path):
     try:
@@ -31,5 +30,6 @@ if ours_enters == True:
 elif attack_theirs == True:
     attack_theirs += 1
 
-if ours_enters == 0
+if ours_enters == 0:
     print("The cat did not enter today")
+
