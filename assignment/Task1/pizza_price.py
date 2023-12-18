@@ -24,33 +24,48 @@ while True:
     try:
         Pizza_number = input("Please enter the number of Pizzas ordered")
         Pizza_number = int(Pizza_number)
-        #Checking if the day is Tuesday
+        break
+    except:
+        print("invalid input, please enter a valid whole number value")
+
+
 while True:
-    try:
-        day = input("Enter the day of the week")
-        day = day.lower()
-        if day == "tuesday":
-            Tuesday = True
-        else:
-            Tuesday = False
+    day = input("Enter the day of the week")
+    day = day.lower()
+    if day in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
+        Tuesday = (day == "tuesday")
+        break
+    else:
+        print("Invalid input, please enter a valid day of the week.")
+
+if day == "tuesday":
+    Tuesday = True
 
 #This checks if delivery is required
-While True:
+while True:
     Delivery_Check = input("""Is delivery required (enter as yes / no)""")
     Delivery_Check = Delivery_Check.lower()
-    if Delivery_Check == "yes":
-        Delivery_Required = True
+    if Delivery_Check in ["yes", "no"]:
+        Delivery_Required = (Delivery_Check == "yes")
+        break
     else:
-        Delivery_Required = False
+        print("Invalid input, please enter, yes or no")
+
+if Delivery_Required == "yes":
+    Delivery_Required = True
 
 #This checks if the app was used
 while True:
     App_Check = input("""Was the app used (enter as yes / no)""")
     App_Check = App_Check.lower()
-    if App_Check == "yes":
-        App_Used = True
+    if App_Check in ["yes", "no"]:
+        App_Used = (App_Check == "yes")
+        break
     else:
-        App_Used = False
+        print("Invalid input, please enter, yes or no")
+
+if App_Used == "yes":
+    App_Used = True
 
 #This part of the program will calculate the output
 Total_Cost = Pizza_cost * Pizza_number
