@@ -27,3 +27,9 @@ if ours_enters == True:
     ours_enters += 1
     total_visit_time = exit_time - entry_time
     time_ours_in += total_visit_time
+
+elif attack_theirs == True:
+    attack_theirs += 1
+
+if ours_enters == 0
+    print("The cat did not enter today")
