@@ -41,9 +41,16 @@ if total_visit_time < shortest_visit:
 elif attack_theirs == True:
     attack_theirs += 1
 
+average_visit_time = total_visit_time / ours_enters
+
 #Final program output
 if ours_enters == 0:
     print("The cat did not enter today")
 
 else:
-
+    print(f"OUR cat entered {ours_enters} times.")
+    print(f"Other cats entered and were attacked {attack_theirs} times.")
+    print(f"OUR cat spent {time_ours_in} minutes in the house.")
+    print(f"OUR cat was in the house for an everage of {average_visit_time} minutes.")
+    print(f"The longest of these visits was {longest_visit}.")
+    print(f"The shortest of these visits was {shortest_visit}.")
