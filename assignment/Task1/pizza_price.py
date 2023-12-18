@@ -20,31 +20,37 @@ print("==========================")
 #This is the information that is needed to be gathered from the user
 
 #Checks the number of Pizzas Ordered
-Pizza_number = input("Please enter the number of Pizzas ordered")
-Pizza_number = int(Pizza_number)
-#Checking if the day is Tuesday
-day = input("Enter the day of the week")
-day = day.lower()
-if day == "tuesday":
-    Tuesday = True
-else:
-    Tuesday = False
+while True:
+    try:
+        Pizza_number = input("Please enter the number of Pizzas ordered")
+        Pizza_number = int(Pizza_number)
+        #Checking if the day is Tuesday
+while True:
+    try:
+        day = input("Enter the day of the week")
+        day = day.lower()
+        if day == "tuesday":
+            Tuesday = True
+        else:
+            Tuesday = False
 
 #This checks if delivery is required
-Delivery_Check = input("""Is delivery required (enter as yes / no)""")
-Delivery_Check = Delivery_Check.lower()
-if Delivery_Check == "yes":
-    Delivery_Required = True
-else:
-    Delivery_Required = False
+While True:
+    Delivery_Check = input("""Is delivery required (enter as yes / no)""")
+    Delivery_Check = Delivery_Check.lower()
+    if Delivery_Check == "yes":
+        Delivery_Required = True
+    else:
+        Delivery_Required = False
 
 #This checks if the app was used
-App_Check = input("""Was the app used (enter as yes / no)""")
-App_Check = App_Check.lower()
-if App_Check == "yes":
-    App_Used = True
-else:
-    App_Used = False
+while True:
+    App_Check = input("""Was the app used (enter as yes / no)""")
+    App_Check = App_Check.lower()
+    if App_Check == "yes":
+        App_Used = True
+    else:
+        App_Used = False
 
 #This part of the program will calculate the output
 Total_Cost = Pizza_cost * Pizza_number
