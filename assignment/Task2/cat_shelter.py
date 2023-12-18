@@ -25,4 +25,5 @@ exit_time = int(exit_time)
 
 if ours_enters == True:
     ours_enters += 1
-  #  total_visit_time =
+    total_visit_time = exit_time - entry_time
+    time_ours_in += total_visit_time
