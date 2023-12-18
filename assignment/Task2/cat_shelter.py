@@ -14,3 +14,6 @@ time_ours_in = 0
 Longest_visit = 0
 shortest_visit = 0
 
+for line in lines:
+    line = line.strip('END'):
+    break
