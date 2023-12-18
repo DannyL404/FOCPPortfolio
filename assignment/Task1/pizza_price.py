@@ -69,8 +69,7 @@ if App_Used == "yes":
 
 #This part of the program will calculate the output
 Total_Cost = Pizza_cost * Pizza_number
-if Delivery_Required == True:
-    Total_Cost += 2.5
+
 
 if Tuesday == True:
     Total_Cost *= 0.5
@@ -78,5 +77,7 @@ if Tuesday == True:
 if App_Used == True:
     Total_Cost *= 0.75
 
+if Delivery_Required == True:
+    Total_Cost += 2.5
 #Displays the total cost to the user
 print(f"Total Price: £{Total_Cost:.2f}")
