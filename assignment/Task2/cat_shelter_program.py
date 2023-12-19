@@ -1,8 +1,7 @@
 if __name__ == "__main__":
 
     import sys
-    sys.path.append('cat_shelter_program')
-    import shelter_analysis
+    import cat_shelter
 
-    shelter_analysis.shelter_analysis(sys.argv)
+    cat_shelter.shelter_analysis(sys.argv[1])
 
