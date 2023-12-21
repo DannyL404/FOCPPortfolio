@@ -14,18 +14,21 @@ Your marker will leave a mark and feedback in this file.*
 
 ## 0. Practicals and Exercises
 
-*Describe here the work that is in the ``practicals`` folder. Pay special attention
-to any work you have included that is not taken from the sheets on MyBeckett. Write no more than 100 words.*
+The practicals folder contains the work from each week that I have completed. In each folder there is a copy of the slides from the video, this is a PDF file that has been annotated on by myself with handwritten notes. 
+There is also 2 Microsoft Word documents, the exercises and practicals documents. These have all been completed and uploaded. The associated Python files in these folders relate directly to the exercises and practicals documents. 
 
 ## 1. Task 1: Pizza Prices
 
-*Explain here how your "Pizza" programs works. Is it complete? Do you know of some bugs or errors? Be honest!
-Write about 100 words.*
+The Pizza program is working as described in the brief. It works by taking user input for required data and calculating a final price using a selection of IF statements. 
+Data validation is performed during the input phase by using a While loop, correct data being entered will delete the 'TRUE' value, breaking the loop and allowing the program to continue. 
+From my testing, there are no bugs or errors and the program is complete. 
 
 ## 2. Task 2: The Cat Shelter
 
-*Does this program work correctly? Please confirm if the file name is taken as a command-line argument. IS there
-anything else your marker needs to know?*
+This program works correctly. The program calculated the data with the cat_shelter.py program, this is a function called upon by the cat_shelter_program.py file. 
+The function works by opening the log file and reading each line individually. It then reads each individual line and calculates the information this line tells. It will then output the desired stats. 
+To run the program open the command line to the folder containing both programs and the log files. Run the command 'python cat_shelter_program.py LOGFILE'
+
 
 ## 3. Task 3: Managing Passwords
 
