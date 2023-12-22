@@ -8,15 +8,18 @@ def deluser_program(password_file_path):
             for line_num, line in enumerate(lines, 1):
                 if selected_username in line:
                     print("Match found!")
-                    break
-                else:
-                    print("No username found")
+                    return selected_username
+            print("No username found")
+            return None
     except:
         print("File not found")
 
-
 if __name__ == "__main__":
-    if len(sys.argv) > 2:
-        print('There is no file selected!')
+    if len(sys.argv) != 2:
+        print('There is not file selected!')
     else:
-        deluser_program(sys.argv[1])
+        username_match = deluser_program(sys.argv[1])
+        if username_match is not None:
+            print(username_match)
+        else:
+            print("No username matched.")
