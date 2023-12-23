@@ -1,4 +1,5 @@
 import sys
+import codecs
 
 def adduser_program(password_file_path):
     try:
@@ -11,6 +12,8 @@ def adduser_program(password_file_path):
                     return
         fullname = input("Please enter your full name.")
         password = input("Please enter your password")
+        password = codecs.encode(password, 'rot_13')
+
         new_line = ['\n' ,new_username, ':', fullname, ':' , password]
         new_list = lines + new_line
         with open(password_file_path, 'w') as file:
@@ -25,3 +28,4 @@ if __name__ == "__main__":
         print('There is no file selected!')
     else:
         adduser_program(sys.argv[1])
+
