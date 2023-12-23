@@ -6,9 +6,9 @@ def adduser_program(password_file_path):
             lines = file.readlines()
             new_username = input("Please enter the username you would like to add")
             for line in lines:
-                if line == (new_username):
+                if new_username in line:
                     print('Username in use!')
-                    break
+                    return
         fullname = input("Please enter your full name.")
         password = input("Please enter your password")
         new_line = ['\n' ,new_username, ':', fullname, ':' , password]
