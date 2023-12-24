@@ -10,19 +10,21 @@ def passwd_program(password_file_path):
             current_password = input("Enter your current password: ")
             current_password = codecs.encode(current_password, 'rot_13')
 
-            for line in lines:
+            for i, line in enumerate(lines):
                 if username in line:
-                    _, _, files_password = line.strip().split(':')
+                    _, name, files_password = line.strip().split(':')
                     if current_password == files_password:
                         new_password = input("Enter a new password: ")
                         confirm_password = input("Enter your new password again: ")
                         if new_password == confirm_password:
                             new_password = codecs.encode(new_password, 'rot_13')
-                            current_password = new_password
-                            lines.append(_, _, new_password = line.strip().split(':'))
+                            lines[i] = f"{username}:{name}:{new_password}\n"
+                            with open(password_file_path, 'w') as file:
+                                file.writelines(lines)
+                            print("Password changed successfully.")
                         else:
-                            break
-                            return
+                            print("Passwords do not match.")
+                        return
                     else:
                         print("Incorrect password.")
                         return
