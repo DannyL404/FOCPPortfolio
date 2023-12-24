@@ -36,12 +36,12 @@ To run the program open the command line to the folder containing both programs 
 need to do in order to see how much you have done?*  
 
  - Deluser Program 
-This works as intended, from the command line running the program deluser.py followed with the Username that is required for deletion, the program will delete that line by selecting the rest of the data into a list and then writing this new list to the file. 
- - Login program 
+This works as intended, from the command line running the program deluser.py followed with the file containing the passwords. It will ask for the Username that is required for deletion, the program will delete that line by selecting the rest of the data into a list and then writing this new list to the file. 
+ - Add User program 
  This program works as intended, from the command line the file containing the passwords can be entered and the program will ask for input of a Username, full name and password. This will be added to the password document, with the password encrypted Using the ROT-13 algorithm.
  https://blog.finxter.com/how-to-use-rot13-in-python/ - I did Use this blog for the Use of ROT-13 within my program. 
- -
-
+ -Login Program
+ This works as intended, from the command line with an argument of the file containing the Username and password. It will ask for a new Username and password and will then convert the password to a ROT-13 Value. If the Username is in the file and the password value matches this, it will display that the login was successful. 
   
 ## Declaration  
   
