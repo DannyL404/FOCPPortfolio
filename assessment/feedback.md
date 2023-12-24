@@ -15,7 +15,7 @@ Your marker will leave a mark and feedback in this file.*
 ## 0. Practicals and Exercises  
   
 The practicals folder contains the work from each week that I have completed. In each folder there is a copy of the slides from the video, this is a PDF file that has been annotated on by myself with handwritten notes.   
-There is also 2 Microsoft Word documents, the exercises and practicals documents. These have all been completed and uploaded. The associated Python files in these folders relate directly to the exercises and practicals documents.   
+There is also 2 Microsoft Word documents, the exercises and practicals documents. These have all been completed and uploaded. The associated Python files in these folders relate directly to the exercises and practical documents.   
   
 ## 1. Task 1: Pizza Prices  
   
@@ -32,9 +32,6 @@ To run the program open the command line to the folder containing both programs 
   
 ## 3. Task 3: Managing Passwords  
   
-*Please indicate how much of this is completed. If it is incomplete, how much has been done? What does the marker  
-need to do in order to see how much you have done?*  
-
  - Deluser Program 
 This works as intended, from the command line running the program deluser.py followed with the file containing the passwords. It will ask for the Username that is required for deletion, the program will delete that line by selecting the rest of the data into a list and then writing this new list to the file. 
  - Add User program 
@@ -42,6 +39,9 @@ This works as intended, from the command line running the program deluser.py fol
  https://blog.finxter.com/how-to-use-rot13-in-python/ - I did Use this blog for the Use of ROT-13 within my program. 
  -Login Program
  This works as intended, from the command line with an argument of the file containing the Username and password. It will ask for a new Username and password and will then convert the password to a ROT-13 Value. If the Username is in the file and the password value matches this, it will display that the login was successful. 
+ - Passwd Program
+ This works as intended, from the command line with an argument of the file containing the Username and password. It will ask for the current Username and password which it will confirm against the file. It will then ask for a new password and a confirmation which it will write into the password file specified.  
+
   
 ## Declaration  
   
